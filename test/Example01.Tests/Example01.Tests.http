@@ -1,0 +1,55 @@
+﻿###
+
+GET http://localhost:5010/Api/123
+
+###
+
+GET http://localhost:5010/Api/search?keyword=walter
+
+###
+
+GET http://localhost:5010/Api/trace
+X-Trace-Id: xyz
+
+###
+
+GET http://localhost:5010/Api/list?Take=20&Skip=10
+
+###
+
+GET http://localhost:5010/Api/date
+
+###
+
+GET http://localhost:5010/Api/custom?answer=oui
+
+###
+
+POST http://localhost:5010/Api
+Content-Type: application/json
+
+{
+  "id": 123,
+  "firstName": "Walter",
+  "lastName": "White"
+}
+
+###
+
+PUT http://localhost:5010/Api/123
+Content-Type: application/json
+
+{
+  "id": 123,
+  "firstName": "Walter",
+  "lastName": "White"
+}
+
+###
+
+DELETE http://localhost:5010/Api/123
+
+###
+
+
+
